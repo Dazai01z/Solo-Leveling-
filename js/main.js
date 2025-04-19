@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggleBtn.addEventListener("click", () => {
     questBox.classList.toggle("hidden");
-    sound.play();
+
+    // Try to play sound safely
+    sound.play().catch((error) => {
+      console.warn("Sound couldn't play:", error);
+    });
   });
 });
