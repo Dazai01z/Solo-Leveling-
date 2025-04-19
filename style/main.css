@@ -1,0 +1,19 @@
+body {
+  background: linear-gradient(to bottom, #1e1b4b, #4c1d95);
+  color: white;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-window {
+  background-color: rgba(30, 27, 75, 0.8);
+  border: 2px solid #8b5cf6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #a78bfa;
+  text-align: center;
+}
