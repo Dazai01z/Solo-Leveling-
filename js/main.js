@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleBtn.addEventListener("click", () => {
     questBox.classList.toggle("hidden");
 
-    // Try to play sound safely
+    // Ensure sound is played only after a user action
+    sound.currentTime = 0; // Restart the audio to play from the beginning
     sound.play().catch((error) => {
       console.warn("Sound couldn't play:", error);
     });
