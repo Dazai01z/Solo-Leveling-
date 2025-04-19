@@ -14,25 +14,43 @@ body {
 }
 
 .status-window {
-  background: rgba(30, 27, 75, 0.85);
-  border: 3px solid #7c3aed;
-  border-radius: 16px;
-  box-shadow: 0 0 40px #8b5cf6, 0 0 15px #4f46e5 inset;
+  background: rgba(30, 27, 75, 0.9); /* Dark glass effect */
+  border: 2px solid #8b5cf6; /* Neon purple glow */
+  border-radius: 20px;
   padding: 30px;
-  width: 300px;
+  width: 350px;
   text-align: center;
-  animation: popIn 0.8s ease-out;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.6);
+  animation: popIn 1s ease-out;
+  backdrop-filter: blur(10px); /* Glass effect */
 }
 
 .status-window h1 {
-  font-size: 28px;
-  color: #a78bfa; /* Purple glow text */
-  margin-bottom: 10px;
+  font-size: 32px;
+  color: #a78bfa;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #a78bfa;
 }
 
 .status-window p {
-  margin: 8px 0;
+  margin: 15px 0;
   font-size: 18px;
+  color: #e4d9ff;
+  letter-spacing: 0.5px;
+}
+
+.status-window .stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.status-window .stats div {
+  flex: 1;
+  font-size: 16px;
+  text-align: center;
 }
 
 @keyframes popIn {
@@ -44,4 +62,4 @@ body {
     transform: scale(1);
     opacity: 1;
   }
-}
+  }
