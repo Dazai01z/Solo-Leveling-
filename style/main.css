@@ -8,21 +8,22 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
 .status-window {
-  background: rgba(30, 27, 75, 0.9); /* Dark glass effect */
-  border: 2px solid #8b5cf6; /* Neon purple glow */
+  background: rgba(30, 27, 75, 0.9);
+  border: 2px solid #8b5cf6;
   border-radius: 20px;
   padding: 30px;
   width: 350px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.6);
   animation: popIn 1s ease-out;
-  backdrop-filter: blur(10px); /* Glass effect */
+  backdrop-filter: blur(10px);
 }
 
 .status-window h1 {
@@ -51,6 +52,35 @@ body {
   flex: 1;
   font-size: 16px;
   text-align: center;
+}
+
+/* QUEST STYLES */
+#quest-box {
+  background: rgba(75, 0, 130, 0.9);
+  border: 2px solid #7c3aed;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #a78bfa;
+  animation: popIn 0.6s ease-out;
+  width: 320px;
+  text-align: center;
+}
+
+#toggle-quest {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4c1d95;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 10px #7c3aed;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes popIn {
