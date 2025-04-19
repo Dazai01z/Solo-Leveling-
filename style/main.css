@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background for the futuristic look */
+    background-color: #0d0d0d; /* Deep black background for a better neon contrast */
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -15,11 +15,11 @@ body {
 .status-panel {
     width: 600px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #4B0082;
+    background: rgba(13, 13, 13, 0.95); /* Slight transparency for depth */
+    border: 2px solid #6e00ff; /* Neon purple */
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 0 20px #9400D3, 0 0 50px #4B0082;
+    box-shadow: 0 0 30px #6e00ff, 0 0 60px #9a00ff; /* Glow */
     backdrop-filter: blur(5px);
     color: white;
     text-align: center;
@@ -27,11 +27,11 @@ body {
 
 /* Header Section */
 .status-header h1 {
-    font-size: 2rem;
-    color: #FF00FF;
+    font-size: 2.5rem;
+    color: #ff00ff; /* Bright magenta */
     margin: 0;
-    text-shadow: 0 0 8px #FF00FF, 0 0 15px #9400D3;
-    border-bottom: 1px solid #9400D3;
+    text-shadow: 0 0 12px #ff00ff, 0 0 25px #6e00ff;
+    border-bottom: 2px solid #6e00ff;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -46,21 +46,21 @@ body {
 
 .level-number {
     font-size: 4rem;
-    color: #00FFFF;
-    text-shadow: 0 0 10px #00FFFF, 0 0 20px #4B0082;
+    color: #00e5ff; /* Cyan */
+    text-shadow: 0 0 15px #00e5ff, 0 0 30px #0099cc;
     margin-right: 20px;
 }
 
 .level-info h2 {
     font-size: 1.5rem;
     margin: 0;
-    color: #FF00FF;
-    text-shadow: 0 0 8px #FF00FF;
+    color: #ff00ff;
+    text-shadow: 0 0 12px #ff00ff;
 }
 
 .level-info p {
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 5px 0 0 0;
     font-style: italic;
 }
@@ -69,36 +69,36 @@ body {
 .attributes-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
 .attribute {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid #9400D3;
+    border: 2px solid #6e00ff; /* Neon purple */
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 8px #9400D3;
+    background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+    box-shadow: 0 0 10px #6e00ff;
 }
 
 .attribute-name {
     font-size: 1rem;
-    color: #FF00FF;
-    text-shadow: 0 0 5px #FF00FF;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
 }
 
 .attribute-value {
     font-size: 1rem;
-    color: #00FFFF;
-    text-shadow: 0 0 5px #00FFFF;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
 }
 
 .increase {
     font-size: 0.8rem;
-    color: #7CFC00;
+    color: #39ff14; /* Neon green */
     margin-left: 5px;
-    text-shadow: 0 0 5px #7CFC00;
+    text-shadow: 0 0 8px #39ff14;
 }
 
 /* Glowing Border Animation */
@@ -111,7 +111,7 @@ body {
     bottom: -5px;
     border: 2px solid transparent;
     border-radius: 10px;
-    background: linear-gradient(45deg, #FF00FF, #9400D3, #00FFFF, #4B0082);
+    background: linear-gradient(45deg, #ff00ff, #6e00ff, #00e5ff, #39ff14);
     background-size: 300% 300%;
     animation: glowing-border 6s linear infinite;
     z-index: -1;
@@ -127,4 +127,4 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
+    }
