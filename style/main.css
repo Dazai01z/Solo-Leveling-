@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
 body {
-  background: linear-gradient(to bottom, #1e1b4b, #4c1d95);
-  color: white;
-  font-family: sans-serif;
-  height: 100vh;
+  background: radial-gradient(ellipse at center, #0f172a 0%, #1e1b4b 100%);
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
   margin: 0;
+  padding: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .status-window {
-  background-color: rgba(30, 27, 75, 0.8);
-  border: 2px solid #8b5cf6;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #a78bfa;
+  background: rgba(30, 27, 75, 0.85);
+  border: 3px solid #7c3aed;
+  border-radius: 16px;
+  box-shadow: 0 0 40px #8b5cf6, 0 0 15px #4f46e5 inset;
+  padding: 30px;
+  width: 300px;
   text-align: center;
+  animation: popIn 0.8s ease-out;
+}
+
+.status-window h1 {
+  font-size: 28px;
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+.status-window p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
